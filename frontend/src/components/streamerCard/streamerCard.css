@@ -18,13 +18,14 @@
 }
 
 .streamer-card__info {
-    font-size: 1.45rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--accent-color);
 }
 
 .streamer-card__info-name {
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 
