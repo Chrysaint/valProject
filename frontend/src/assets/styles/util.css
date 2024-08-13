@@ -1,0 +1,38 @@
+.default_btn {
+    min-width: 200px;
+    padding-inline: 0.5rem;
+    padding-block: 0.75rem;
+    background-color: var(--accent-color);
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: var(--primary-color);
+    -webkit-text-stroke: rgba(0, 0, 0, 60);
+    border-radius: 10px;
+}
+
+/* .default_btn:hover,
+.default_btn:focus-visible {
+    background-color: var(--accent-color);
+} */
+
+.nav_underline {
+    border-radius: 10px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.nav_underline.active {
+    border-color: var(--accent-color);
+    border-width: 3px;
+}
+
+.stroke_font {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--primary-color);
+}
+
+.white {
+    color: var(--primary-color);
+}
