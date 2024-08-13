@@ -10,6 +10,12 @@
     color: var(--primary-color);
     -webkit-text-stroke: rgba(0, 0, 0, 60);
     border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.default_btn:hover,
+.default_btn:focus-visible{
+    background-color: rgba(var(--accent-color-rgba), 0.7);
 }
 
 .nav_underline {

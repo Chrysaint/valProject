@@ -3,9 +3,9 @@
 :root{
     --primary-color: #f1f1f1;
     --secondary-color: #A7A9BE;
-    --accent-color: #FF8906;
+    --accent-color: rgb(255,137,6);
+    --accent-color-rgba: 255,137,6;
     --background-color: #0F0E17;
-    --font-400: 
 }
 
 *,
