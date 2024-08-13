@@ -12,11 +12,6 @@
     border-radius: 10px;
 }
 
-/* .default_btn:hover,
-.default_btn:focus-visible {
-    background-color: var(--accent-color);
-} */
-
 .nav_underline {
     border-radius: 10px;
     border-bottom: 1px solid var(--primary-color);
