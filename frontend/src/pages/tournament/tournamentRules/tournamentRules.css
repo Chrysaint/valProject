@@ -1,0 +1,13 @@
+.prizes {
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+@media (min-width: 900px) {
+    .prizes {
+        grid-template-columns: 300px 300px 300px;
+        gap: 2.5rem;
+    }
+}

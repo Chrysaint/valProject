@@ -1,0 +1,26 @@
+.tournament-table__nav {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.tournament-table__nav-list {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.tournament-table__nav-link {
+    transition: color 150ms linear;
+}
+
+.tournament-table__nav-link.active {
+    color: var(--accent-color);
+}
+
+.tournament-table__nav-link:hover,
+.tournament-table__nav-link:focus-visible {
+    color: var(--accent-color);
+}

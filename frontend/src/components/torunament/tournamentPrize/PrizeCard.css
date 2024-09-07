@@ -1,0 +1,41 @@
+.prize-card{
+    max-width: 300px;
+    padding: 1.5rem 1rem 1.75rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid var(--accent-color);
+    /* background-color: var(--background-color); */
+}
+
+.prize-card__place{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.prize-card__img{
+    display: block;
+    margin-block: 1.5rem;
+    margin-inline: auto;
+    aspect-ratio: 1/1;
+    max-width: 75px;
+    width: 100%;
+}
+
+.prize-card__prize{
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+.prize-card__prize_accent {
+    font-size: 1.25rem;
+    color: var(--accent-color);
+}
+
+.prize-card[data-place="2"] {
+    margin-top: 0.25rem;
+}
+
+.prize-card[data-place="3"] {
+    margin-top: 0.4rem;
+}
+

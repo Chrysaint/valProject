@@ -7,8 +7,15 @@ function Index () {
         <section className="inner-wrapper hero">
             <div className="hero__info">
                 <div className="hero__info__top">
-                    <h2 className="hero__title">Hwrd <span className="white">x</span> <span className="hero__title_other stroke_font">lsds</span></h2>
-                    <p className="hero__text">Призовой фонд 1000 рублей.</p>
+                    <h2 className="hero__title">Hwrd <span className="white">x</span> <span className="stroke_font">lsds</span></h2>
+                    <p className="hero__text">
+                        Призовой фонд 5000 рублей. <br />
+                        Участие 32-х команд. <br />
+                        Участники команды: 2 + 1 запасной <br /> <br />
+                        Дата начала турнира: 7 сентября <br />
+                        Дата окончания: 9 сентября. <br /> <br />
+                        Успей зарегистрировать свою команду.
+                    </p>
                     <button className="default_btn">Регистрация</button>
                 </div>
                 <div className="hero__info__bot">

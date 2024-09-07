@@ -1,0 +1,36 @@
+.teams__search {
+    display: grid;
+    gap: 10px;
+}
+
+.teams__search__header {
+    
+}
+
+.teams__search__input {
+    padding: 0.75rem;
+    border-radius: 10px;
+    background-color: var(--background-color_lighter);
+    outline: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    transition: all 100ms;
+}
+
+.teams__search__input::placeholder {
+    color: var(--secondary-color);
+}
+
+.teams__search__input:focus-visible {
+    outline: 2px solid var(--accent-color);
+}
+
+.teams__list {
+    margin-top: 0.75rem;
+}
+
+.teams__item__info {
+    display: flex;
+    align-items: center;
+}

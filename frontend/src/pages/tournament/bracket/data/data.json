@@ -1,0 +1,52 @@
+{
+    "1/ 16": [
+        {
+            "game1": {
+                "team1": ["name", 12],
+                "team2": ["name", 12]
+            },
+            "game2": {
+                "team1": "teamName",
+                "score1": 12,
+                "team2": "teamName2",
+                "score2": 12
+            },
+            "game3": {
+                "team1": "teamName",
+                "score1": 12,
+                "team2": "teamName2",
+                "score2": 12
+            },
+            "game4": {
+                "team1": "teamName",
+                "score1": 12,
+                "team2": "teamName2",
+                "score2": 12
+            },
+            "game5": {
+                "team1": "teamName",
+                "score1": 12,
+                "team2": "teamName2",
+                "score2": 12
+            },
+            "game6": {
+                "team1": "teamName",
+                "score1": 12,
+                "team2": "teamName2",
+                "score2": 12
+            },
+            "game7": {
+                "team1": "teamName",
+                "score1": 12,
+                "team2": "teamName2",
+                "score2": 12
+            },
+            "game8": {
+                "team1": "teamName",
+                "score1": 12,
+                "team2": "teamName2",
+                "score2": 12
+            }
+        }
+    ]
+}

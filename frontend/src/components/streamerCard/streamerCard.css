@@ -5,7 +5,7 @@
 }
 
 .streamer-card__logo {
-    max-width: 75px;
+    max-width: 70px;
     aspect-ratio: 1;
     border-radius: 100%;
     overflow: hidden;
@@ -31,14 +31,18 @@
 
 .streamer-card__info-link {
     color: var(--primary-color);
-    transition: color 250ms linear;
+    transition: color 350ms ease-in;
 }
 
 .streamer-card__info-name:not(.stroke_font) + .streamer-card__info-link:hover,
 .streamer-card__info-name:not(.stroke_font) + .streamer-card__info-link:focus-visible {
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--primary-color);
+    color: var(--background-color);
+    text-shadow: 
+        1px 1px 0px var(--primary-color),
+        1px -1px 0px var(--primary-color),
+        -1px 1px 0px var(--primary-color),
+        -1px -1px 0px var(--primary-color)
+    ; 
 }
 
 .streamer-card__info-name.stroke_font + .streamer-card__info-link:hover,

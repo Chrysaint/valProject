@@ -1,21 +1,18 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './header.css'
 
 const LINKS = [
     {
         title: 'Турнир',
-        href: '/tournament',
-        status: "active"
+        href: 'tournament',
     },
     {
         title: 'Команда',
-        href: '/team',
-        status: "inactive"
+        href: 'team',
     },
     {
         title: 'Аккаунт',
-        href: '/account',
-        status: "inactive"
+        href: 'account',
     }
 ]
 
@@ -27,10 +24,15 @@ export const Header = () => {
                 <ul className="header__list">
                     {LINKS.map(link => {
                         return (
-                            <li key={link.title} className={`header__item nav_underline ${link.status}`}>
-                                <Link to={link.href} className="header__link">
+                            <li key={link.title} className={`header__item `}>
+                                <NavLink to={link.href}
+                                className={({ isActive, isPending, isTransitioning }) =>
+                                    isPending ? "" : isActive ? " header__link nav_underline active" : isTransitioning ? " header__link nav_underline active" : "header__link nav_underline inactive"
+                                  }
+                                ></NavLink>
+                                <p className="header__link-text">
                                     {link.title}
-                                </Link>
+                                </p>
                             </li>
                         )
                     })}

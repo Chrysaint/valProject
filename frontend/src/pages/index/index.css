@@ -11,7 +11,9 @@
 }
 
 .hero__info__top {
-    /* display: ; */
+    display: grid;
+    gap: 1rem;
+    justify-items: start;
 }
 
 .hero__title {
@@ -21,12 +23,9 @@
     color: var(--accent-color);
 }
 
-.hero__title_other {
-
-}
-
 .hero__text {
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -36,5 +35,5 @@
 }
 
 .hero__img {
-
+    scale: 1.2;
 }

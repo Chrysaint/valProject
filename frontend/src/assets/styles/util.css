@@ -1,3 +1,12 @@
+.page_title {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.page_title_centered {
+    text-align: center;
+}
+
 .default_btn {
     min-width: 200px;
     padding-inline: 0.5rem;
@@ -9,7 +18,7 @@
     font-weight: 600;
     color: var(--primary-color);
     -webkit-text-stroke: rgba(0, 0, 0, 60);
-    border-radius: 10px;
+    border-radius: 6px;
     transition: background-color 0.2s ease-in-out;
 }
 
@@ -29,11 +38,60 @@
 }
 
 .stroke_font {
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--primary-color);
+    color: var(--background-color);
+    text-shadow: 
+        1px 1px 0px var(--primary-color),
+        1px -1px 0px var(--primary-color),
+        -1px 1px 0px var(--primary-color),
+        -1px -1px 0px var(--primary-color)
+    ; 
 }
 
 .white {
     color: var(--primary-color);
+}
+
+.golden {
+    color: var(--golden-color);
+}
+
+.silver {
+    color: var(--silver-color);
+}
+
+.bronze {
+    color: var(--bronze-color);
+}
+
+.tournament-wrapper_narrow {
+    max-width: 800px;
+    margin-inline: auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.teams__item {
+    padding: 0.75rem;
+    border-top: 1px solid var(--grey-color);
+    border-bottom: none;
+    background-color: var(--background-color);
+    cursor: pointer;
+}
+
+.teams__item + .teams__item {
+    border-top: 1px solid var(--grey-color);
+}
+
+.teams__item:last-child {
+    border-bottom: 1px solid var(--grey-color);
+}
+
+.teams__item:focus-visible,
+.teams__item:hover {
+    background-color: var(--background-color_lighter);
+}
+
+.teams__name {
+    font-size: 1.25rem;
+    font-weight: 600;
 }

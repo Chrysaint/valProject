@@ -1,0 +1,9 @@
+.results__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teams__place {
+    
+}
