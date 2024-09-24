@@ -1,13 +1,19 @@
-.prizes {
-    margin-top: 1rem;
-    display: grid;
-    justify-content: center;
-    gap: 0.75rem;
+.tournament-rules {
+  text-align: center;
+  display: grid;
+  gap: 2.5rem;
 }
 
-@media (min-width: 900px) {
-    .prizes {
-        grid-template-columns: 300px 300px 300px;
-        gap: 2.5rem;
-    }
+.prizes {
+  margin-top: 1rem;
+  display: grid;
+  justify-content: center;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 325px));
+}
+
+@media (min-width: 400px) {
+  .prizes {
+    gap: 2.5rem;
+  }
 }
