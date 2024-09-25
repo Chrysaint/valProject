@@ -1,4 +1,4 @@
-import TournamentBannedCard from "../../../components/torunament/tournamentBannedCard/TournamentBannedCard";
+import TournamentBannedCard from "../../../components/torunament/tournamentBannedCard/TournamentBanCard";
 import PrizeCard from "../../../components/torunament/tournamentPrize/PrizeCard";
 import { bannedHeroes, bannedGuns, bannedMaps, Prizes } from "./data/data";
 import "./tournamentRules.css";
@@ -56,10 +56,6 @@ function TournamentRules() {
           ))}
         </div>
       </div>
-      <p>
-        Исключены все карты с 3-мя плентами, допускаются все карты с 2-мя
-        плентами, кроме Fracture.
-      </p>
       <br />
       <p>
         <b>Формат турнира:</b> <br />
@@ -80,21 +76,6 @@ function TournamentRules() {
         </b>
       </p>
       <br />
-      <p>
-        <b>Основные правила, касающиеся турнира:</b> <br />
-        Запрещено использование снайперских винтовок Operator и Outlaw (Marshal
-        допускается) <br />
-        Запрещено использование дробовика Judge (Bucky разрешё) <br />
-        Запрещено использование пулемета Odin (Ares разрешён) <br />
-        Запрещен к игре весь список Стражей (Chamber, Cypher, KillJoy, Sage,
-        Deadlock), а также Дуэлянт (ISO) <br />
-        Запрещены любые оскорбления, провокации и другие формы неспортивного
-        поведения. Подобное может повлечь за собой предупреждение с последующей
-        дисквалификацией команды или моментальную дисквалификацию. <br />
-        Любое использование читов и багов игры ведут к соответствующим мерам
-        (дисквалификация или переигровка, в зависимости от тяжести проступка){" "}
-        <br />
-      </p>
       <br />
       <p>
         Регистрация на турнир оформляется выбранным капитаном вашей команды.{" "}

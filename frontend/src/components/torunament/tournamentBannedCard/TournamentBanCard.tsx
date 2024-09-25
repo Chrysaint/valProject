@@ -1,5 +1,5 @@
 import { BannedRuleCard } from "../../../pages/tournament/tournamentRules/data/data";
-import "./TournamentBannedCard.css";
+import "./TournamentBanCard.css";
 
 type Props = {
   card: BannedRuleCard;
@@ -7,12 +7,12 @@ type Props = {
 const cardImgClasses = {
   map: "banned-card__img_map",
   character: "banned-card__img_character",
-  gun: "banned-card__img_map",
+  gun: "banned-card__img_gun",
+  prize: "banned-card__img_prize",
 };
 const TournamentBannedCard = (props: Props) => {
   return (
-    <div className="prize-card">
-      {/* <div className="prize-card__img-wrapper"> */}
+    <div className="glowing-card">
       <img
         src={props.card.image}
         alt={props.card.name}

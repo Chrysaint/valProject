@@ -1,97 +1,108 @@
 .page_title {
-    margin-bottom: 30px;
-    font-size: 2rem;
+  margin-bottom: 30px;
+  font-size: 2rem;
 }
 
 .page_title_centered {
-    text-align: center;
+  text-align: center;
 }
 
 .default_btn {
-    min-width: 200px;
-    padding-inline: 0.5rem;
-    padding-block: 0.75rem;
-    background-color: var(--accent-color);
-    text-align: center;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    font-weight: 600;
-    color: var(--primary-color);
-    -webkit-text-stroke: rgba(0, 0, 0, 60);
-    border-radius: 6px;
-    transition: background-color 0.2s ease-in-out;
+  min-width: 200px;
+  padding-inline: 0.5rem;
+  padding-block: 0.75rem;
+  background-color: var(--accent-color);
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: var(--primary-color);
+  -webkit-text-stroke: rgba(0, 0, 0, 60);
+  border-radius: 6px;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .default_btn:hover,
-.default_btn:focus-visible{
-    background-color: rgba(var(--accent-color-rgba), 0.7);
+.default_btn:focus-visible {
+  background-color: rgba(var(--accent-color-rgba), 0.7);
 }
 
 .nav_underline {
-    border-radius: 10px;
-    border-bottom: 1px solid var(--primary-color);
+  border-radius: 10px;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .nav_underline.active {
-    border-color: var(--accent-color);
-    border-width: 3px;
+  border-color: var(--accent-color);
+  border-width: 3px;
 }
 
 .stroke_font {
-    color: var(--background-color);
-    text-shadow: 
-        1px 1px 0px var(--primary-color),
-        1px -1px 0px var(--primary-color),
-        -1px 1px 0px var(--primary-color),
-        -1px -1px 0px var(--primary-color)
-    ; 
+  color: var(--background-color);
+  text-shadow: 1px 1px 0px var(--primary-color),
+    1px -1px 0px var(--primary-color), -1px 1px 0px var(--primary-color),
+    -1px -1px 0px var(--primary-color);
 }
 
 .white {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .golden {
-    color: var(--golden-color);
+  color: var(--golden-color);
 }
 
 .silver {
-    color: var(--silver-color);
+  color: var(--silver-color);
 }
 
 .bronze {
-    color: var(--bronze-color);
+  color: var(--bronze-color);
 }
 
 .tournament-wrapper_narrow {
-    max-width: 800px;
-    margin-inline: auto;
-    display: grid;
-    gap: 1.5rem;
+  max-width: 800px;
+  margin-inline: auto;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .teams__item {
-    padding: 0.75rem;
-    border-top: 1px solid var(--grey-color);
-    border-bottom: none;
-    background-color: var(--background-color);
-    cursor: pointer;
+  padding: 0.75rem;
+  border-top: 1px solid var(--grey-color);
+  border-bottom: none;
+  background-color: var(--background-color);
+  cursor: pointer;
 }
 
 .teams__item + .teams__item {
-    border-top: 1px solid var(--grey-color);
+  border-top: 1px solid var(--grey-color);
 }
 
 .teams__item:last-child {
-    border-bottom: 1px solid var(--grey-color);
+  border-bottom: 1px solid var(--grey-color);
 }
 
 .teams__item:focus-visible,
 .teams__item:hover {
-    background-color: var(--background-color_lighter);
+  background-color: var(--background-color_lighter);
 }
 
 .teams__name {
-    font-size: 1.25rem;
-    font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.glowing-card {
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+
+  max-width: 300px;
+  padding: 1.5rem 1rem 1.75rem;
+
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 1px var(--secondary-color);
+  background-color: var(--background-color_darker);
 }
