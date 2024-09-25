@@ -1,66 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 
-:root{
-    --primary-color: rgb(241,241,241);
-    --primary-color-rgba: 241,241,241;
-    --secondary-color: rgb(167,169,190);
-    --secondary-color-rgba: 167,169,190;
-    --accent-color: rgb(255,137,6);
-    --accent-color-rgba: 255,137,6;
-    --background-color: #0F0E17;
-    --background-color_darker: #0d0c13;
-    --background-color_lighter: #191727;
-    --grey-color: #333333;
-    --golden-color: #F0CD13;
-    --silver-color: #C0C0C0;
-    --bronze-color: #CD7F32;
+:root {
+  --primary-color: rgb(241, 241, 241);
+  --primary-color-rgba: 241, 241, 241;
+  --secondary-color: rgb(167, 169, 190);
+  --secondary-color-rgba: 167, 169, 190;
+  --accent-color: rgb(255, 137, 6);
+  --accent-color-rgba: 255, 137, 6;
+  --background-color: #0f0e17;
+  --background-color_darker: #0d0c13;
+  --background-color_lighter: #191727;
+  --grey-color: #333333;
+  --golden-color: #f0cd13;
+  --silver-color: #c0c0c0;
+  --bronze-color: #cd7f32;
 }
 
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    min-height: 100dvh;
-    background-color: var(--background-color);
-    font-family: "Montserrat", sans-serif;
-    color: var(--primary-color);
+  min-height: 100dvh;
+  background-color: var(--background-color);
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-color);
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 img,
 svg {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 button {
-    cursor: pointer;
-    border: none;
-    outline: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .outer-wrapper {
-    margin-inline: auto;
-    max-width: 1560px;
-    padding-inline: 20px;
+  margin-inline: auto;
+  max-width: 1560px;
+  padding-inline: 20px;
 }
 
 .inner-wrapper {
-    margin-inline: auto;
-    max-width: 1090px;
-    padding-inline: 20px;
+  margin-inline: auto;
+  max-width: 1090px;
+  padding-inline: 20px;
 }

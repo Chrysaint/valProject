@@ -1,13 +1,10 @@
 import { TPrizeCard } from "../../../../components/torunament/tournamentPrize/PrizeCard";
 
-type BannedRuleCard = {
+type BannedCardTypes = "character" | "map" | "gun";
+export type BannedRuleCard = {
+  type: BannedCardTypes;
   name: string;
-  role: string;
-  image: string;
-};
-
-type BannedMapCard = {
-  name: string;
+  role?: string;
   image: string;
 };
 
@@ -37,56 +34,84 @@ export const Prizes: TPrizeCard[] = [
 
 export const bannedHeroes: BannedRuleCard[] = [
   {
+    type: "character",
     name: "Chamber",
     role: "Страж",
-    image: "",
+    image: "./../src/assets/ban-cards/characters/chamber.png",
   },
   {
+    type: "character",
     name: "Cypher",
     role: "Страж",
-    image: "",
+    image: "./../src/assets/ban-cards/characters/cypher.png",
   },
   {
+    type: "character",
     name: "KillJoy",
     role: "Страж",
-    image: "",
+    image: "./../src/assets/ban-cards/characters/killjoy.png",
   },
   {
+    type: "character",
     name: "Sage",
     role: "Страж",
-    image: "Support",
+    image: "./../src/assets/ban-cards/characters/sage.png",
   },
   {
+    type: "character",
     name: "Deadlock",
     role: "Страж",
-    image: "Support",
+    image: "./../src/assets/ban-cards/characters/deadlock.webp",
   },
   {
+    type: "character",
     name: "Iso",
     role: "Дуэлянт",
-    image: "",
+    image: "./../src/assets/ban-cards/characters/iso.webp",
   },
 ];
 
-export const BannedGuns: BannedRuleCard[] = [
+export const bannedGuns: BannedRuleCard[] = [
   {
+    type: "gun",
     name: "Operator",
     role: "Снайперская винтовка",
-    image: "",
+    image: "./../src/assets/ban-cards/guns/Operator.webp",
   },
   {
+    type: "gun",
     name: "Outlaw",
     role: "Снайперская винтовка",
-    image: "",
+    image: "./../src/assets/ban-cards/guns/Outlaw.webp",
   },
   {
+    type: "gun",
     name: "Odin",
     role: "Пулемет",
-    image: "",
+    image: "./../src/assets/ban-cards/guns/Odin.webp",
   },
   {
+    type: "gun",
     name: "Judge",
     role: "Дробовик",
-    image: "",
+    image: "./../src/assets/ban-cards/guns/Judge.webp",
+  },
+];
+
+export const bannedMaps: BannedRuleCard[] = [
+  {
+    type: "map",
+    name: "Fracture",
+    image: "./../src/assets/ban-cards/maps/fracture.webp",
+  },
+  {
+    type: "map",
+    name: "Haven",
+    image: "./../src/assets/ban-cards/maps/haven.webp",
+  },
+  {
+    type: "map",
+    name: "Lotus",
+    image: "./../src/assets/ban-cards/maps/lotus.webp",
   },
 ];

@@ -1,6 +1,6 @@
 import TournamentBannedCard from "../../../components/torunament/tournamentBannedCard/TournamentBannedCard";
 import PrizeCard from "../../../components/torunament/tournamentPrize/PrizeCard";
-import { bannedHeroes, BannedGuns, Prizes } from "./data/data";
+import { bannedHeroes, bannedGuns, bannedMaps, Prizes } from "./data/data";
 import "./tournamentRules.css";
 
 function TournamentRules() {
@@ -19,7 +19,7 @@ function TournamentRules() {
       </div>
       <div className="tournament-rules__block">
         <h3>Призовой фонд турнира:</h3> <br />
-        <div className="prizes">
+        <div className="rules-cards">
           {Prizes.map((prize) => (
             <PrizeCard
               key={prize.id}
@@ -34,18 +34,28 @@ function TournamentRules() {
       </div>
       <div className="tournament-rules__block">
         <h3>Запрещенные герои:</h3> <br />
-        <div className="prizes">
+        <div className="rules-cards">
           {bannedHeroes.map((hero) => (
-            <TournamentBannedCard
-              key={hero.name}
-              title={hero.name}
-              role={hero.role}
-              img={hero.image}
-            />
+            <TournamentBannedCard key={hero.name} card={hero} />
           ))}
         </div>
       </div>
-      <h3>Запрещенные карты:</h3> <br />
+      <div className="tournaments-rules__block">
+        <h3>Запрещенное оружие:</h3> <br />
+        <div className="rules-cards">
+          {bannedGuns.map((gun) => (
+            <TournamentBannedCard key={gun.name} card={gun} />
+          ))}
+        </div>
+      </div>
+      <div className="tournaments-rules__block">
+        <h3>Запрещенные карты:</h3> <br />
+        <div className="rules-cards">
+          {bannedMaps.map((map) => (
+            <TournamentBannedCard key={map.name} card={map} />
+          ))}
+        </div>
+      </div>
       <p>
         Исключены все карты с 3-мя плентами, допускаются все карты с 2-мя
         плентами, кроме Fracture.

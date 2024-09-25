@@ -1,10 +1,19 @@
 .banned-card {
+  max-width: 300px;
+  width: 100%;
+}
+.banned-card__img_character {
+  max-height: 220px;
 }
 
-.banned-card__img {
+.banned-card__img_map {
+  border-radius: 10px;
 }
 
 .banned-card__title {
+  color: var(--accent-color);
+  font-size: 1.15rem;
+  font-weight: 700;
 }
 
 .banned-card__role {
