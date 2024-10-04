@@ -8,6 +8,9 @@ import TournamentTeams from './pages/tournament/tournamentTeams/tournamentTeams.
 import TournamentResults from './pages/tournament/tournamentResults/tournamentResults.tsx'
 import TournamentRules from './pages/tournament/tournamentRules/tournamentRules.tsx'
 import { BracketType } from './pages/tournament/bracket/types.ts'
+import Account from './pages/auth/account/Account.tsx'
+import SignUp from './pages/auth/signup/SignUp.tsx'
+import SignIn from './pages/auth/signin/SingIn.tsx'
 
 function App() {
 
@@ -24,6 +27,9 @@ function App() {
           <Route path='results' element={<TournamentResults />}/>
           <Route path='rules' element={<TournamentRules />}/>
         </Route>
+        <Route path='signup' element={<SignUp />}/>
+        <Route path='signin' element={<SignIn />}/>
+        <Route path='account' element={<Account />}/>
         <Route path='*' element={<NotFound />}/>
       </Routes>
     </>

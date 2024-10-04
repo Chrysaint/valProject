@@ -1,0 +1,39 @@
+.auth-block {
+    max-width: 400px;
+    margin: auto;
+}
+
+.auth-title {
+    text-align: center;
+}
+
+.auth-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.auth-form__block {
+    display: grid;
+    gap: 4px;
+}
+
+.auth-label {
+    font-weight: 700;
+}
+
+.auth-input {
+    padding: 4px 8px;
+    height: 40px;
+    background: var(--background-color_lighter);
+    border: none;
+    border-radius: 12px;
+    outline: none;
+
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.auth-form > button {
+    max-width: 400px;
+    justify-self: center;
+}
