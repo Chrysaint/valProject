@@ -7,6 +7,7 @@ const SignUp = () => {
     const [emailInput, setEmailInput] = useState("");
     const [valNickNameInput, setValNickNameInput] = useState("");
     const [valTagInput, setValTagInput] = useState("");
+    const [contactInput, setContactInput] = useState("");
   return (
     <div className="auth-block">
       <h2 className="auth-title"> Регистрация </h2>
@@ -40,6 +41,12 @@ const SignUp = () => {
             Riot Tag
           </label>
           <input className="auth-input" type="text" onChange={e => setValTagInput(e.target.value)} value={valTagInput} />
+        </div>
+        <div className="auth-form__block">
+          <label className="auth-label">
+            Discord ID
+          </label>
+          <input className="auth-input" type="text" onChange={e => setContactInput(e.target.value)} value={contactInput} />
         </div>
         <button className="default_btn">Зарегистрироваться</button>
       </form>
