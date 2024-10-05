@@ -6,10 +6,12 @@ import TournamentResults from "../pages/tournament/tournamentResults/tournamentR
 import TournamentRules from "../pages/tournament/tournamentRules/tournamentRules";
 import SignUp from "../pages/auth/signup/SignUp";
 import SignIn from "../pages/auth/signin/SingIn";
-import Account from "../pages/auth/account/Account";
+import Account from "../pages/account/Account";
 import NotFound from "../pages/notFound/NotFound";
 import Bracket from "../pages/tournament/bracket/Bracket";
 import { BracketType } from "../pages/tournament/bracket/types";
+import User from "../pages/account/User/User";
+import Team from "../pages/account/Team/Team";
 
 const Router = () => {
   return (
@@ -25,7 +27,11 @@ const Router = () => {
         </Route>
         <Route path='signup' element={<SignUp />}/>
         <Route path='signin' element={<SignIn />}/>
-        <Route path='account' element={<Account />}/>
+        <Route path='account' element={<Account />}>
+          <Route index element={<Navigate to="user" replace />} />
+          <Route path="user" element={<User />} />
+          <Route path="team" element={<Team />} />
+        </Route>
         <Route path='*' element={<NotFound />}/>
     </Routes>
   )
