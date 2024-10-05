@@ -20,11 +20,14 @@ function UpperBracket(props: Props) {
     if (!bracketWrapperWidth || !bracketWidth) return;
     const widthDiff = bracketWrapperWidth - bracketWidth;
     console.log("step sum: ", step+bracketPos)
-    const newPos = step + gap + bracketPos;
+    let newPos = step + bracketPos;
+    if (step < 0) {
+      newPos += gap;
+    } else newPos -= gap;
     if (newPos > 0) {
-      setBracketPos(-widthDiff + step - gap + colWidth);
-    } else if (newPos < -widthDiff) {
       setBracketPos(0);
+    } else if (newPos < -widthDiff - step - gap + colWidth) {
+      setBracketPos(-widthDiff - step - gap + colWidth);
     } else setBracketPos(newPos)
   }
   console.log(props.type);
