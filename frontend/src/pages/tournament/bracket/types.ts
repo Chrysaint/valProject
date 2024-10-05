@@ -24,7 +24,7 @@ export type TGame = {
     team2: string,
     score1: number,
     score2: number,
-}
+} | null
 
 export enum BracketType {
     lowerBracket = "lower",

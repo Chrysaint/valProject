@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { getCookie } from "../../api/cookie/getCookie";
 import StreamerCard from "../../components/streamerCard/streamerCard";
 import { StreamerCardStyle } from "../../components/streamerCard/streamerCardTypes";
@@ -5,7 +6,7 @@ import './index.css'
 
 function Index () {
 
-    const isLoggedIn: number = getCookie("user")
+    const isLoggedIn: number = Number(getCookie("user"))
 
     return (
         <section className="inner-wrapper hero">
@@ -20,7 +21,11 @@ function Index () {
                         Дата окончания: 9 сентября. <br /> <br />
                         Успей зарегистрировать свою команду.
                     </p>
-                    <button className="default_btn">{isLoggedIn ? "Аккаунт" : "Принять участие"}</button>
+                    <NavLink to={isLoggedIn ? "account" : "signup"}
+                                className="default_btn"
+                                >
+                    {isLoggedIn ? "Аккаунт" : "Принять участие"}
+                    </NavLink>
                 </div>
                 <div className="hero__info__bot">
                     <StreamerCard streamer="Howard" link="twitch.tv/howardtm" style={StreamerCardStyle.strokeText} icon="howard_avatar.png"/>
