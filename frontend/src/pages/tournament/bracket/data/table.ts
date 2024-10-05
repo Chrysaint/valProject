@@ -1,5 +1,11 @@
 import { TGame, TTable, TTableCol, TTableNode } from "../types"
 
+
+// function generateTableMock(stages: number): TTable {
+//     const table: TTable;
+
+//     return table;
+// }
 const Game1: TGame = {
     team1: 'Speramjka 123',
     team2: 'team2 123',
@@ -43,6 +49,36 @@ const GameNode3:TTableNode = {
 
 
 const GameCols: TTableCol[] = [
+    {
+        id: 1,
+        games: [GameNode1, GameNode2],
+        gap: 0,
+    }, 
+    {
+        id: 2,
+        games: [GameNode3],
+        gap: 1,
+    },
+    {
+        id: 1,
+        games: [GameNode1, GameNode2],
+        gap: 0,
+    }, 
+    {
+        id: 2,
+        games: [GameNode3],
+        gap: 1,
+    },
+    {
+        id: 1,
+        games: [GameNode1, GameNode2],
+        gap: 0,
+    }, 
+    {
+        id: 2,
+        games: [GameNode3],
+        gap: 1,
+    },
     {
         id: 1,
         games: [GameNode1, GameNode2],
