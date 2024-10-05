@@ -13,23 +13,23 @@ function UpperBracket(props: Props) {
   const colWidth = 240;
   const gap = -88;
   const [bracketPos, setBracketPos] = useState(0);
+
   function slideBracket(step: number) {
-    console.log(step, bracketPos)
     const bracketWidth = document.querySelector(".bracket")?.clientWidth;
     const bracketWrapperWidth = document.querySelector('.bracket__wrapper')?.clientWidth;
     if (!bracketWrapperWidth || !bracketWidth) return;
     const widthDiff = bracketWrapperWidth - bracketWidth;
-    console.log("step sum: ", step+bracketPos)
     let newPos = step + bracketPos;
     if (step < 0) {
       newPos += gap;
     } else newPos -= gap;
     if (newPos > 0) {
       setBracketPos(0);
-    } else if (newPos < -widthDiff - step - gap + colWidth) {
-      setBracketPos(-widthDiff - step - gap + colWidth);
+    } else if (newPos < -widthDiff + step) {
+      setBracketPos(-widthDiff + step + colWidth);
     } else setBracketPos(newPos)
   }
+
   console.log(props.type);
   return (
     <div className="bracket">
