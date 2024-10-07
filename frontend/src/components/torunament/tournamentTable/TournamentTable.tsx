@@ -1,21 +1,19 @@
-import TournamentColumn from './TournamentColumn/TournamentColumn';
-import './TournamentTable.css'
-import { TTable } from '../../../pages/tournament/bracket/types';
+import TournamentColumn from "./TournamentColumn/TournamentColumn";
+import "./tournamentTable.css";
+import { TTable } from "../../../pages/tournament/bracket/types";
 
 type Props = {
-    table: TTable,
-}
+  table: TTable;
+};
 
-function TournamentTable (props: Props) {
+function TournamentTable(props: Props) {
   return (
     <div className="bracket__table">
-        {props.table.column.map((column, idx) => {
-         return (
-            <TournamentColumn key={idx} column={column} /> )}
-         )
-        }
+      {props.table.column.map((column, idx) => {
+        return <TournamentColumn key={idx} column={column} />;
+      })}
     </div>
-  )
+  );
 }
 
-export default TournamentTable
+export default TournamentTable;

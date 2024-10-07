@@ -1,6 +1,6 @@
 import { useState } from "react";
 import TournamentTable from "../../../components/torunament/tournamentTable/TournamentTable.tsx";
-import "./Bracket.css";
+import "./bracket.css";
 import { header_titles } from "./data/header_data.ts";
 import { Table } from "./data/table.ts";
 import { BracketType } from "./types.ts";
@@ -16,7 +16,8 @@ function UpperBracket(props: Props) {
 
   function slideBracket(step: number) {
     const bracketWidth = document.querySelector(".bracket")?.clientWidth;
-    const bracketWrapperWidth = document.querySelector('.bracket__wrapper')?.clientWidth;
+    const bracketWrapperWidth =
+      document.querySelector(".bracket__wrapper")?.clientWidth;
     if (!bracketWrapperWidth || !bracketWidth) return;
     const widthDiff = bracketWrapperWidth - bracketWidth;
     let newPos = step + bracketPos;
@@ -27,21 +28,27 @@ function UpperBracket(props: Props) {
       setBracketPos(0);
     } else if (newPos < -widthDiff + step) {
       setBracketPos(-widthDiff + step + colWidth);
-    } else setBracketPos(newPos)
+    } else setBracketPos(newPos);
   }
 
   console.log(props.type);
   return (
     <div className="bracket">
-      <button onClick={() => slideBracket(colWidth)} className="bracket__headers__arrow bracket__headers__arrow_left">
+      <button
+        onClick={() => slideBracket(colWidth)}
+        className="bracket__headers__arrow bracket__headers__arrow_left"
+      >
         <img
           src="./../../src/assets/icons/arrows/arrow-left.svg"
           alt="arrow-left"
         />
       </button>
-      <div className="bracket__wrapper" style={{
-        transform: `translateX(${bracketPos}px)`
-      }}>
+      <div
+        className="bracket__wrapper"
+        style={{
+          transform: `translateX(${bracketPos}px)`,
+        }}
+      >
         <div className="bracket__nav">
           <div className="bracket__headers">
             {header_titles.map((header, index) => (
@@ -56,7 +63,10 @@ function UpperBracket(props: Props) {
         </div>
         <TournamentTable table={Table} />
       </div>
-      <button onClick={() => slideBracket(-colWidth)} className="bracket__headers__arrow bracket__headers__arrow_right">
+      <button
+        onClick={() => slideBracket(-colWidth)}
+        className="bracket__headers__arrow bracket__headers__arrow_right"
+      >
         <img
           src="./../../src/assets/icons/arrows/arrow-right.svg"
           alt="arrow-left"

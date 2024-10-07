@@ -1,5 +1,5 @@
 import { BannedRuleCard } from "../../../pages/tournament/tournamentRules/data/data";
-import "./TournamentBanCard.css";
+import "./tournamentBanCard.css";
 
 type Props = {
   card: BannedRuleCard;

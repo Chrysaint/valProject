@@ -1,4 +1,4 @@
-import "./PrizeCard.css";
+import "./prizeCard.css";
 
 export type TPrizeCard = {
   id: number;
