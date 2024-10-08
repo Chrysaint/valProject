@@ -1,0 +1,46 @@
+.invites-block {
+  padding: 0.75rem;
+}
+
+.invites__list {
+  margin-inline: auto;
+  width: clamp(300px, 50%, 800px);
+  display: grid;
+  gap: 0.5rem;
+}
+
+.invites__item {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.invites__item + .invites__item {
+  border-top: 1px solid rgba(var(--primary-color-rgba), 0.5);
+}
+
+.invites__item__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.invites__item__btn {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: var(--background-color_darker);
+  transition: background-color 200ms linear;
+  border: 1px solid rgba(var(--primary-color-rgba), 0.2);
+}
+
+.invites__item__btn[data-type="accept"]:hover {
+  background-color: var(--green);
+}
+
+.invites__item__btn[data-type="decline"]:hover {
+  background-color: var(--red);
+}
