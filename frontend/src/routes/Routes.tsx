@@ -12,6 +12,7 @@ import Bracket from "../pages/tournament/bracket/Bracket";
 import { BracketType } from "../pages/tournament/bracket/types";
 import User from "../pages/account/user/User";
 import Team from "../pages/account/team/Team";
+import Invitations from "../pages/account/invitations/Invitations";
 
 const Router = () => {
   return (
@@ -37,6 +38,7 @@ const Router = () => {
         <Route index element={<Navigate to="user" replace />} />
         <Route path="user" element={<User />} />
         <Route path="team" element={<Team />} />
+        <Route path="invitations" element={<Invitations />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>

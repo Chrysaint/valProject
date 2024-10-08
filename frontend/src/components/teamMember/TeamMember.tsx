@@ -1,18 +1,25 @@
 import { useState } from "react";
 import "./teamMember.css";
+import { TTeamMember } from "./types";
 
-const TeamMember = () => {
+type Props = {
+  data: TTeamMember;
+};
+
+const TeamMember = (props: Props) => {
   const [modalVisible, setModalVisible] = useState(0);
 
   return (
     <li className="team__item">
       <div className="team__item_left">
         <img
-          src="../src/assets/icons/user/user.svg"
-          alt="user"
+          src={`../src/assets/icons/user/${
+            props.data.role === "leader" ? "crown" : "user"
+          }.svg`}
+          alt={props.data.role}
           className="team__item__icon"
         />
-        <span className="team__item__username">Chrysaint</span>
+        <span className="team__item__username">{props.data.nickname}</span>
       </div>
       <div className="team__item_right">
         <button

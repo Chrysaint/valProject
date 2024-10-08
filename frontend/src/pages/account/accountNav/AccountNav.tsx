@@ -9,6 +9,10 @@ const LINKS = [
     {
         text: "Команда",
         link: "team"
+    },
+    {
+        text: "Приглашения",
+        link: "invitations"
     }
 ]
 

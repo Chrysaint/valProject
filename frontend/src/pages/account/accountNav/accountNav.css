@@ -1,13 +1,14 @@
 .account__nav {
-    padding: 0.5rem 0.15rem;
-    margin-block: 0.25rem;
+  padding: 0.5rem 0.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .account__list {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .account__item {
-    font-size: 1.115rem;
+  font-size: 1.115rem;
 }
