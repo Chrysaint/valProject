@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { getCookie } from "../../api/cookie/getCookie";
-import StreamerCard from "../../components/streamerCard/streamerCard";
+import StreamerCard from "../../components/streamerCard/StreamerCard";
 import { StreamerCardStyle } from "../../components/streamerCard/streamerCardTypes";
 import './index.css'
 

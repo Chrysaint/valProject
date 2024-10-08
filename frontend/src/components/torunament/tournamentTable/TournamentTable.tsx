@@ -1,4 +1,4 @@
-import TournamentColumn from "./TournamentColumn/TournamentColumn";
+import TournamentColumn from "./tournamentColumn/TournamentColumn";
 import "./tournamentTable.css";
 import { TTable } from "../../../pages/tournament/bracket/types";
 

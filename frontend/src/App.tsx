@@ -1,4 +1,4 @@
-import { Header } from './components/header/header'
+import { Header } from './components/header/Header.tsx'
 import Router from './routes/Routes.tsx'
 
 function App() {

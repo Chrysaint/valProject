@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import TournamentNav from "./tournamentNav/tournamentNav";
+import TournamentNav from "./tournamentNav/TournamentNav";
 import "./tournament.css";
 
 function Tournament() {

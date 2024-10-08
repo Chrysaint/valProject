@@ -1,5 +1,5 @@
 import { TTableCol } from '../../../../pages/tournament/bracket/types'
-import './../TournamentTable.css'
+import './../tournamentTable.css'
 
 type Props = {
     column: TTableCol,
