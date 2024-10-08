@@ -26,12 +26,6 @@ const User = (props: Props) => {
           Изменить аватар
         </button>
         <button className="default_btn">Пригласить в команду</button>
-        <input
-          type="file"
-          name=""
-          id=""
-          onChange={(e) => console.log(e.target.value)}
-        />
       </div>
       <div className="user__right">
         <h2 className="user__nickname">Chrysaint</h2>
