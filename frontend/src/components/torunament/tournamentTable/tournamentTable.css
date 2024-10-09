@@ -1,42 +1,41 @@
 .bracket__table {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(var(--_col_count), var(--_col_width));
-    gap: var(--_col_gap);
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(var(--_col_count), var(--_col_width));
+  gap: var(--_col_gap);
 }
 
 .bracket__column {
-    width: 100%;
+  width: 100%;
 }
 
 .bracket__column__games {
-    display: grid;
-    gap: 2.5rem;
+  display: grid;
 }
 
 .bracket__column__game {
-    width: 100%;
-    display: grid;
-    gap: 1.25rem;
+  width: 100%;
+  display: grid;
+  gap: 0.5rem;
 }
 
 .bracket__column__team {
-    padding: 0.5rem ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--grey-color);
-    border-radius: 10px;
-    color: var(--primary-color);
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--grey-color);
+  border-radius: 10px;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .bracket__team__name {
-    overflow: hidden;
-    max-width: 10ch;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 10ch;
+  text-overflow: ellipsis;
 }

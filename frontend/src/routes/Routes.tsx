@@ -13,6 +13,7 @@ import { BracketType } from "../pages/tournament/bracket/types";
 import User from "../pages/account/user/User";
 import Team from "../pages/account/team/Team";
 import Invitations from "../pages/account/invitations/Invitations";
+import TournamentGame from "../pages/tournament/tournamentGame/TournamentGame";
 
 const Router = () => {
   return (
@@ -31,6 +32,8 @@ const Router = () => {
         <Route path="teams" element={<TournamentTeams />} />
         <Route path="results" element={<TournamentResults />} />
         <Route path="rules" element={<TournamentRules />} />
+        <Route path="upper-bracket/game/:id" element={<TournamentGame />} />
+        <Route path="lower-bracket/game/:id" element={<TournamentGame />} />
       </Route>
       <Route path="signup" element={<SignUp />} />
       <Route path="signin" element={<SignIn />} />
