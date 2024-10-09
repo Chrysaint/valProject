@@ -1,9 +1,15 @@
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import "./user.css";
 type Props = {};
 
+function parseFileName(e: ChangeEvent<HTMLInputElement>): string {
+  if (!e.target.files?.length) return "";
+  return e.target.files[0].name;
+}
+
 const User = (props: Props) => {
   const [modalOpened, setModalOpened] = useState(0);
+  const [avatarFileName, setAvatarFileName] = useState("");
 
   return (
     <div className="user__wrapper">
@@ -12,7 +18,10 @@ const User = (props: Props) => {
           <div className="modal__wrapper">
             <button
               className="modal__exit-button"
-              onClick={() => setModalOpened(0)}
+              onClick={() => {
+                setAvatarFileName("");
+                setModalOpened(0);
+              }}
             >
               <img src="../src/assets/icons/menu/cross.svg" alt="close" />
             </button>
@@ -21,13 +30,24 @@ const User = (props: Props) => {
               type="file"
               id="upload-file"
               accept="image/*"
-              onChange={(e) => console.log(e.target)}
+              onChange={(e) => setAvatarFileName(parseFileName(e))}
             />
             <div className="modal__actions">
               <button id="modal-submit" className="modal__button">
-                Изменить<span>Выбранный файл: huh</span>
+                Изменить
+                <span>
+                  Файл: {avatarFileName ? avatarFileName : "Не выбран"}
+                </span>
               </button>
-              <button className="modal__button">Отмена</button>
+              <button
+                className="modal__button"
+                onClick={() => {
+                  setAvatarFileName("");
+                  setModalOpened(0);
+                }}
+              >
+                Отмена
+              </button>
             </div>
           </div>
         </div>
