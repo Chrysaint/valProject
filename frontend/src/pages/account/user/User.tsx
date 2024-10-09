@@ -8,13 +8,27 @@ const User = (props: Props) => {
   return (
     <div className="user__wrapper">
       {modalOpened ? (
-        <div className="modal" onClick={() => setModalOpened(0)}>
+        <div className="modal">
           <div className="modal__wrapper">
-            <button className="modal__button" onClick={() => setModalOpened(0)}>
+            <button
+              className="modal__exit-button"
+              onClick={() => setModalOpened(0)}
+            >
               <img src="../src/assets/icons/menu/cross.svg" alt="close" />
             </button>
             <label htmlFor="upload-file" className="upload-file-label"></label>
-            <input type="file" id="upload-file" />
+            <input
+              type="file"
+              id="upload-file"
+              accept="image/*"
+              onChange={(e) => console.log(e.target)}
+            />
+            <div className="modal__actions">
+              <button id="modal-submit" className="modal__button">
+                Изменить<span>Выбранный файл: huh</span>
+              </button>
+              <button className="modal__button">Отмена</button>
+            </div>
           </div>
         </div>
       ) : null}
