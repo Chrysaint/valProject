@@ -1,0 +1,37 @@
+.tournament-game__team {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.tournament-game__team__header {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.tournament-game__team__list {
+  padding: 0.5rem;
+  background-color: var(--background-color_darker);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tournament-game__team__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.tournament-game__team__item + .tournament-game__team__item {
+  border-top: 1px solid var(--background-color_lighter);
+}
+
+.tournament-game__team-ready {
+  margin-top: 0.5rem;
+  margin-left: 0.25rem;
+}
+
+.team__item_left {
+  display: flex;
+  gap: 0.5rem;
+}
