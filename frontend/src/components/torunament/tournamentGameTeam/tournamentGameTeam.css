@@ -25,10 +25,12 @@
 .tournament-game__team__item + .tournament-game__team__item {
   border-top: 1px solid var(--background-color_lighter);
 }
+.team__item__ready[data-state="ready"] {
+  color: var(--green);
+}
 
-.tournament-game__team-ready {
-  margin-top: 0.5rem;
-  margin-left: 0.25rem;
+.team__item__ready[data-state="not-ready"] {
+  color: var(--red);
 }
 
 .team__item_left {

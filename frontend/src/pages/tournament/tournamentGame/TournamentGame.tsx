@@ -28,7 +28,7 @@ const TEAM2: TTeam = {
     {
       nickname: "lisadess",
       avatar: "ok.png",
-      ready: false,
+      ready: true,
       role: "leader",
     },
     {
@@ -46,8 +46,8 @@ const TournamentGame = () => {
     <div className="tournament-game__wrapper">
       <h2>Game: #{id}</h2>
       <div className="tournament-game__content">
-        <TournamentGameTeam data={TEAM1} />
-        <TournamentGameTeam data={TEAM2} />
+        <TournamentGameTeam data={TEAM1} style="normal" />
+        <TournamentGameTeam data={TEAM2} style="reversed" />
       </div>
       <button className="tournament__game__btn default_btn">Готов</button>
     </div>
