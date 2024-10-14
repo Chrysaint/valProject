@@ -14,7 +14,11 @@ const TeamMember = (props: Props) => {
       <div className="team__item_left">
         <img
           src={`../src/assets/icons/user/${
-            props.data.role === "leader" ? "crown" : "user"
+            props.data.role === "leader"
+              ? "crown"
+              : props.data.role === "participant"
+              ? "user"
+              : "dot"
           }.svg`}
           alt={props.data.role}
           className="team__item__icon"
