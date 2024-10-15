@@ -20,13 +20,13 @@ func (h *TeamHandler) RegisterRoutes(r *mux.Router) {
 }
 
 func (h *TeamHandler) handleCreateTeam(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("login"))
+	w.Write([]byte("create"))
 }
 
 func (h *TeamHandler) handleInviteToTeam(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("logout"))
+	w.Write([]byte("invite"))
 }
 
 func (h *TeamHandler) handleGetTeam(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("register"))
+	w.Write([]byte("getTeam"))
 }

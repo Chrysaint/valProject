@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	Config "webServer/config"
 	"webServer/db"
@@ -23,6 +24,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	fmt.Printf("Connected to database: %+v\n", db)
 	ws := WebServer.NewHttpServer()
 	err = ws.CreateHttpServer()
 	if err != nil {
